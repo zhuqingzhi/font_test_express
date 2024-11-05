@@ -1,6 +1,6 @@
 const express = require('express');
-const { generateRSAKeyPair, rsaDecrypt } = require('../test');
-const { aesDecrypt } = require('../test/aes_encrypt');
+const { generateRSAKeyPair, rsaDecrypt } = require('../encrypts/rsa_encrypt');
+const { aesDecrypt } = require('../encrypts/aes_encrypt');
 const router = express.Router()
 var publicKey = '', privateKey = '', sessionKey = '';
 
